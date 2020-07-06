@@ -8,6 +8,25 @@ layout: default
   {% include page__hero_video.html %}
 {% endif %}
 
+<div class="row">
+  <div class="medium-6 columns">
+      {% for post in site.posts limit:1 %}
+      {% if post.subheadline %}<p class="subheadline">{{ post.subheadline }}</p>{% endif %}
+      <h2><a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <p>
+          {% if post.meta_description %}{{ post.meta_description | strip_html | escape }}{% else post.teaser %}{{ post.teaser | strip_html | escape }}{% endif %}
+          <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" title="Read {{ post.title | escape_once }}"><strong>{{ site.data.language.read_more }}</strong></a>
+      </p>
+      {% endfor %}
+  </div><!-- /.medium-5.columns -->
+
+
+  <div class="medium-6 columns">
+      <p><strong>{{ site.data.language.more_articles }}</strong></p>
+      {% include list-posts entries='3' offset='1' %}
+  </div><!-- /.medium-7.columns -->
+</div><!-- /.row -->
+<!--
 <div id="main" role="main">
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
@@ -19,4 +38,4 @@ layout: default
       {{ content }}
     </section>
   </article>
-</div>
+</div>-->

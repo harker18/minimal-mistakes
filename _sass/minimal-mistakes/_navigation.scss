@@ -135,7 +135,6 @@
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
-      background-color: #1e5599;
     }
 
     &:first-child {
@@ -189,7 +188,7 @@
 
     &:hover {
       color: #fff;
-      background-color: #1e5599
+
     }
 
     /*&.site-logo {

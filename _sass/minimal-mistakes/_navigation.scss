@@ -80,7 +80,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: $muted-text-color;
+      color: #ffffff;
       border: 1px solid mix(#000, $border-color, 25%);
       border-radius: 0;
 
@@ -129,7 +129,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
+    color: #ffffff;
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
 
@@ -535,13 +535,13 @@
   a {
     display: block;
     padding: 0.25rem 0.75rem;
-    color: $muted-text-color;
+    color: #ffffff;
     font-weight: bold;
     line-height: 1.5;
     border-bottom: 1px solid $border-color;
 
     &:hover {
-      color: $text-color;
+      color: #ffffff;
     }
   }
 

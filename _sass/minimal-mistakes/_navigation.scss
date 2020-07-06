@@ -135,6 +135,7 @@
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
+      background-color: #67313e;
     }
 
     &:first-child {
@@ -178,7 +179,7 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  background: #092240;
 
   a {
     display: block;
@@ -187,17 +188,17 @@
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: #67313e;
     }
 
-    &.site-logo {
+    /*&.site-logo {
       margin-left: 0;
       margin-right: 0.5rem;
     }
 
     &.site-title {
       margin-left: 0;
-    }
+    }*/
   }
 
   &__toggle {
@@ -206,7 +207,7 @@
     height: $nav-toggle-height;
     border: 0;
     outline: none;
-    background-color: transparent;
+    background-color: #092240;
     cursor: pointer;
   }
 
